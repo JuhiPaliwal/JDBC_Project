@@ -14,10 +14,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- *
- * @author aishwarya
- */
 public class Database {
     FileInputStream fin;
     Connection con,con2;
@@ -31,7 +27,7 @@ public Database()
 	try
 	{
       con = DriverManager.getConnection("jdbc:mysql://localhost/BBMS","root","@idx");
-      //here dbname is database name, root is username and sharang is the password
+     
       
     }catch(SQLException sqe){
 	System.out.println("Could not connect to database");
@@ -197,25 +193,13 @@ public void display(String bg)
              
             
         }
-        
-        
-        
-        
+   
         
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         }catch(Exception e){e.printStackTrace();}
-    
-    
-    
-    
-    
-    
-    
-    
+       
     
 }
-
-
 
 }
